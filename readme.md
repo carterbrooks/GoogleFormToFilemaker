@@ -1,6 +1,6 @@
-# Project Title
+# Google Form to Filemaker
 
-Google Forms to Filemaker
+Javascript code to post Google Form responses directly to Filemaker Server using http.
 
 ## Getting Started
 
