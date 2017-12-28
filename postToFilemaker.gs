@@ -1,15 +1,16 @@
 function postToFilemaker(e) {
 
-  // if e is empty, we are debugging script and running it from script editor
+  // e is the "event" parameter passed from Google Forms.
+  // if e is empty, we are debugging script and running it from script editor where no event parameter would be passed
   if (!e){
     e = { "namedValues" : "We are testing here." } //allows script to be run during debugging
   }
 
-  //get data from googleform
+  //get data e
   var googleFormData = JSON.stringify(e) ;  //  Logger.log(googleFormData);
   var googleFormNamedValues = JSON.stringify(e.namedValues) ;  //  Logger.log(googleFormData);
 
-  // conffigure filemaker connection
+  // configure filemaker connection
   var serverPath = "https://fm107.beezwax.net/fmi/rest/api" ;
   var filename = "google_forms_rest";
   var account = "google_form" ;
@@ -23,7 +24,7 @@ function postToFilemaker(e) {
                       };
 
 
- //--- all configurations should be set above this comment
+ //--- all configurations should be set above this comment, nothing below this line should need editing....
 
   //authenticate to get FM-Data-token using http
   var authUrl = serverPath.concat( "/auth/" , filename ) ;
