@@ -14,7 +14,7 @@ function postToFilemaker(e) {
   var serverPath = "https://fm107.beezwax.net/fmi/rest/api" ;
   var filename = "google_forms_rest";
   var account = "google_form" ;
-  var password = "This is 1 password" ;
+  var password = "<password>" ;  //--- use your own password here
 
   // conffigure filemaker data
   var layout = "incoming_google_forms" ;

@@ -1,6 +1,12 @@
 # Google Form to Filemaker
 
-Javascript code to post Google Form responses directly to Filemaker Server using http.
+Google Sheet compatible javascript function for posting to Filemaker Server using http, on a form submit. The function is designed to be installed and used in the Google Sheet the Google Form is using to collect responses.
+
+The example form can be found at http://links.carterbrooks.com/GoogleFormToFilemaker_GoogleForm
+
+The Filemaker File can be browsed, using Filemaker Pro or Filemaker Go at http://links.carterbrooks.com/GoogleFormToFilemaker_FilemakerFile
+
+There is often a short lag between a form being submitted and the trigger being executed.
 
 ## Getting Started
 
@@ -9,7 +15,6 @@ The javascript is designed to be installed as a ".gs" or script in a google proj
 ### Prerequisites
 
 A Filemaker file on Filemaker Server, configured to accept data through the REST api.
-
 
 ### Installing
 
@@ -25,7 +30,7 @@ Deployment instructions coming soon...
 
 ## Authors
 
-* **Carter Brooks** -
+* **Carter Brooks** , carterbrooks.com
 
 ## License
 
