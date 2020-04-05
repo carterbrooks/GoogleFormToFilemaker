@@ -1,3 +1,5 @@
+# Note: This code is currently outdated. It was written for the beta version of the Filemaker Data API, and needs to be rewritten to match the current release version.
+
 # Google Form to Filemaker
 
 Google Sheet compatible javascript function for posting to Filemaker Server using http, on a form submit. The function is designed to be installed and used in the Google Sheet the Google Form is using to collect responses.
